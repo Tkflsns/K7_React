@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { FcHome } from "react-icons/fc";
+import imgLogo from '../public/logo512.png'
+
+// import MyClock from './02/Myclock';
+// import MyDiv from './03/MyDiv';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="flex flex-col w-full max-w-screen-lg h-screen overflow-y-auto mx-auto">
+      <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-orange-100'>
+        <p>Header</p>
+        <p>K-digital</p>
+        <FcHome className='text-3xl text-neutral-50'/>
       </header>
+      <main className='grow'>
+        <img src={imgLogo}>
+      </main>
+      <footer className='flex justify-center items-center h-20 bg-slate-200'>
+        Footer
+      </footer>
     </div>
   );
 }
