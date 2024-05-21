@@ -27,9 +27,9 @@ function App() {
         <ul className='flex'>
           <li className='mr-1.5'><Link to='/clock'>시계</Link></li>
           <li className='mr-1.5'><Link to='/lotto'>로또</Link></li>
-          <li className='mr-1.5'><Link to='/box'>박스 오피스</Link></li>
-          <li className='mr-1.5'><Link to='/food'>푸드 마켓</Link></li>
-          <li className='mr-1.5'><Link to='/traffic'>교통 사고</Link></li>
+          <li className='mr-1.5'><Link to='/box'>박스오피스</Link></li>
+          <li className='mr-1.5'><Link to='/food'>푸드마켓</Link></li>
+          <li className='mr-1.5'><Link to='/traffic'>교통사고</Link></li>
           <li className='mr-1.5'><Link to='/gal'>관광정보</Link></li>
           <li className='mr-1.5'><Link to='/fes'>부산축제정보</Link></li>
         </ul>
