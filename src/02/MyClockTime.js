@@ -1,11 +1,19 @@
 import './MyClock.css';
 import style from './My.module.css'
+import { useEffect, useState } from 'react';
 
 function MyClockTime(){
-    const now = new Date();
-    const nowStr = now.toLocaleTimeString();
-    const gubun = nowStr.substring(0, 2);
+    const [ctime, setCtime] = useState(new Date()) ;
 
+    useEffect(() => {
+        const tm = setInterval(() => {
+            setCtime(new Date());
+        }, 1000);
+
+        return () => {
+            clearInterval(tm)
+        }
+    }, []);
     // const st = {color : "yellow", fontWeight : "bold"};
 
     // let divStyle = "div1";
@@ -23,7 +31,7 @@ function MyClockTime(){
         {/* <div style={{color : "yellow", fontWeight : "bold"}}> {nowStr}  */ /* 인라인으로 스타일 적용*/}
         {/* <div style={st}> */}
         <div className={style.c1}>
-            {nowStr}
+            {ctime.toLocaleTimeString()}
         </div>
         </>
     );
