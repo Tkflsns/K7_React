@@ -22,6 +22,7 @@ export default function Festival() {
         url = url + `serviceKey=${process.env.REACT_APP_GAL_KEY}&pageNo=1&numOfRows=37&resultType=json`
         getFetchData(url);
     }, []);
+    
     useEffect(() => {
         if (!festi) return;
         let tm = festi.map(item => item['GUGUN_NM'])

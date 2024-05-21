@@ -25,13 +25,13 @@ function App() {
       <header className='flex justify-between items-center text-xl font-bold h-20 p-5 bg-orange-100'>
         <p>리액트 실습</p>
         <ul className='flex'>
-          <li><Link to='/clock'>시계</Link></li>
-          <li><Link to='/lotto'>로또</Link></li>
-          <li><Link to='/box'>박스 오피스</Link></li>
-          <li><Link to='/food'>푸드 마켓</Link></li>
-          <li><Link to='/traffic'>교통 사고</Link></li>
-          <li><Link to='/gal'>관광정보</Link></li>
-          <li><Link to='/fes'>부산축제정보</Link></li>
+          <li className='mr-1.5'><Link to='/clock'>시계</Link></li>
+          <li className='mr-1.5'><Link to='/lotto'>로또</Link></li>
+          <li className='mr-1.5'><Link to='/box'>박스 오피스</Link></li>
+          <li className='mr-1.5'><Link to='/food'>푸드 마켓</Link></li>
+          <li className='mr-1.5'><Link to='/traffic'>교통 사고</Link></li>
+          <li className='mr-1.5'><Link to='/gal'>관광정보</Link></li>
+          <li className='mr-1.5'><Link to='/fes'>부산축제정보</Link></li>
         </ul>
         <Link to='/clock'><FcHome className='text-3xl text-neutral-50'/></Link>
       </header>
