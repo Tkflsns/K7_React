@@ -16,6 +16,8 @@ import Traffic from './08_1/Traffic';
 import Gallery from './10/Gallery';
 import Festival from './11/Festival';
 // import RouteMain from './12/RouteMain';
+import Frcst from './13/Frcst';
+import FrcstList from './13/FrcstList';
 
 function App() {
   
@@ -32,6 +34,7 @@ function App() {
           <li className='mr-1.5'><Link to='/traffic'>교통사고</Link></li>
           <li className='mr-1.5'><Link to='/gal'>관광정보</Link></li>
           <li className='mr-1.5'><Link to='/fes'>부산축제정보</Link></li>
+          <li className='mr-1.5'><Link to='/frcst'>단기예보</Link></li>
         </ul>
         <Link to='/clock'><FcHome className='text-3xl text-neutral-50'/></Link>
       </header>
@@ -50,6 +53,8 @@ function App() {
         {/* <MyRef /> */}
         <Route path='/gal' element = {<Gallery />} />
         <Route path='/fes' element = {<Festival/>} />
+        <Route path='/frcst' element = {<Frcst/>} />
+        <Route path='/frcstlt' element = {<FrcstList/>} />
         {/* <RouteMain /> */}
         </Routes>
       </main>
