@@ -43,6 +43,9 @@ export default function Frcst() {
         navigate(`/frcstlt?gubun=${gubun}&x=${x}&y=${y}&dt=${seldate.current.value.replaceAll('-', '')}&area=${area}`)
     }
 
+    const today = new Date();
+    const minDate = today.toISOString().split('T')[0];
+    console.log(minDate)
     return (
         <div>
             <FrcstNav />

@@ -27,7 +27,7 @@ function App() {
       <header className='flex justify-between items-center text-xl font-bold h-20 p-5 bg-orange-100'>
         <p>리액트 실습</p>
         <ul className='flex'>
-          <li className='mr-1.5'><Link to='/clock'>시계</Link></li>
+          <li className='mr-1.5'><Link to='/'>시계</Link></li>
           <li className='mr-1.5'><Link to='/lotto'>로또</Link></li>
           <li className='mr-1.5'><Link to='/box'>박스오피스</Link></li>
           <li className='mr-1.5'><Link to='/food'>푸드마켓</Link></li>
@@ -40,7 +40,7 @@ function App() {
       </header>
       <main className='grow'>
         <Routes>
-        <Route path='/clock' element = {<MyClock />} />
+        <Route path='/' element = {<MyClock />} />
         {/* <img src={imgLogo} alt="logo" /> */}
         {/* <MyDiv1 /> */}
         {/* <MyList /> */}
